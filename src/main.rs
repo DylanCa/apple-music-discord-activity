@@ -15,6 +15,18 @@ fn main() {
     let mut current_track: Option<Track> = None;
 
     loop {
+        if !discord.is_connected {
+            match discord.connect() {
+                Ok(_) => {}
+                Err(_) => {
+                    debug!("Could not connect to Discord ! Is the app Running ?");
+                    debug!("Retrying in 30s ...");
+                    thread::sleep(Duration::from_secs(30));
+                    continue;
+                }
+            }
+        }
+
         let large_img: Option<String>;
         let small_img: Option<String>;
         let application;

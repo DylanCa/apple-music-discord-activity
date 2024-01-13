@@ -1,13 +1,13 @@
 [package]
 name = "apple-music-discord-activity"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 apple-music = "0.11.3"
-rust-discord-activity = "0.1.2"
+rust-discord-activity = "0.3.0"
 urlencoding = "2.1.3"
 log = "0.4.20"
 env_logger = "0.10.1"
