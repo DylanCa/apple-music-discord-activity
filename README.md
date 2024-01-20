@@ -1,5 +1,5 @@
 # Apple Music Discord Activity
-A lightweight Rust project to set Discord Activity to currently listening Apple Music track.
+A lightweight executable to set Discord Activity to currently listening Apple Music track.
 Main goal of this project is to join two of my libraries to achieve it.
 
 ### Please note that the project is not finished yet!
